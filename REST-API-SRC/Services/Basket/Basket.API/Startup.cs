@@ -1,4 +1,6 @@
+using Basket.API.GrpcServices;
 using Basket.API.Repositories;
+using Dicount.Grpc.Protos;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -35,6 +37,12 @@ namespace Basket.API
             );
 
             services.AddScoped<IBasketRepository, BasketRepository>();
+            
+            services.AddGrpcClient<DicountProtoService.DicountProtoServiceClient>(options=>
+            options.Address=new Uri(Configuration["GrpcSettings:DiscountUrl"])
+            );
+            services.AddScoped<DiscountGrpcService>();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
