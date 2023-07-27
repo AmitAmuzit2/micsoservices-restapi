@@ -6,7 +6,7 @@ service DicountProtoService {
   //crud operation
 
   rpc CreateDiscount (CreateDiscountRequest) returns (CouponModel);
-   rpc GetDiscount (GetDiscountRequest) returns (CouponModel);
+  rpc GetDiscount (GetDiscountRequest) returns (CouponModel);
   rpc UpdateDiscount (UpdateDiscountRequest) returns (CouponModel);
   rpc DeleteDiscount (DeleteDiscountRequest) returns (DeleteDiscountResponse);
 
