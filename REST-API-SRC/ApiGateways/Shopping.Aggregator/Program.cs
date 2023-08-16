@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OcelotApiGateway
+namespace Shopping.Aggregator
 {
     public class Program
     {
@@ -18,19 +18,9 @@ namespace OcelotApiGateway
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((hostingContext,config)=>
-                {
-                    config.AddJsonFile($"ocelot.{hostingContext.HostingEnvironment.EnvironmentName}.json",true,true);
-                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                })
-                .ConfigureLogging((Hostingcontext, LoggingBuilder) =>
-                {
-                    LoggingBuilder.AddConfiguration(Hostingcontext.Configuration.GetSection("Logging"));
-                    LoggingBuilder.AddConsole();
-                    LoggingBuilder.AddDebug();
                 });
     }
 }

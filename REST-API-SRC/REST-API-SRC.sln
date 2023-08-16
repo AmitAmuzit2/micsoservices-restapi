@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infastructure", "S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{EA315D08-69A1-4E38-80DB-CE6D38701447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGateway", "ApiGateways\OcelotApiGateway\OcelotApiGateway.csproj", "{1FCFE64A-A315-42DB-BA87-F36D85A6D473}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGateway", "ApiGateways\OcelotApiGateway\OcelotApiGateway.csproj", "{1FCFE64A-A315-42DB-BA87-F36D85A6D473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.Aggregator", "ApiGateways\Shopping.Aggregator\Shopping.Aggregator.csproj", "{4071C646-B160-4891-8582-B4E103E11275}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{1FCFE64A-A315-42DB-BA87-F36D85A6D473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FCFE64A-A315-42DB-BA87-F36D85A6D473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FCFE64A-A315-42DB-BA87-F36D85A6D473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4071C646-B160-4891-8582-B4E103E11275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4071C646-B160-4891-8582-B4E103E11275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4071C646-B160-4891-8582-B4E103E11275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4071C646-B160-4891-8582-B4E103E11275}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +105,7 @@ Global
 		{A2E991F7-0DF0-41DE-AEA4-2E1F2EF42C93} = {208736CC-83B9-4B93-8376-372927EF4E98}
 		{2FB6935E-541E-4DEF-AB47-F99EE465327D} = {208736CC-83B9-4B93-8376-372927EF4E98}
 		{1FCFE64A-A315-42DB-BA87-F36D85A6D473} = {EA315D08-69A1-4E38-80DB-CE6D38701447}
+		{4071C646-B160-4891-8582-B4E103E11275} = {EA315D08-69A1-4E38-80DB-CE6D38701447}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6F2EA49-FA0E-405D-826D-DEE688671E19}
