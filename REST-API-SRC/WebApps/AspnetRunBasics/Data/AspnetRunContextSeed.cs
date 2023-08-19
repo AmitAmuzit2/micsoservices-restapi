@@ -1,4 +1,5 @@
 ﻿using AspnetRunBasics.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,8 @@ namespace AspnetRunBasics.Data
             try
             {
                 // TODO: Only run this if using a real database
-                // aspnetrunContext.Database.Migrate();
-                // aspnetrunContext.Database.EnsureCreated();
+                //aspnetrunContext.Database.Migrate();
+                //aspnetrunContext.Database.EnsureCreated();
 
                 if (!aspnetrunContext.Categories.Any())
                 {
